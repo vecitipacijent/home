@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Image slider</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style-photography.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Image slider start -->
+        <div class="slider">
+            <div class="slides">
+                <!-- Radio buttons start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- Radio buttons end -->
+                <!-- Slide images start -->
+                <div class="slide first">
+                    <img src="pics/suva1.jpg" alt="Suva planina">
+                </div>
+                <div class="slide">
+                    <img src="pics/suva2.jpg" alt="Suva planina 2">
+                </div>
+                <div class="slide">
+                    <img src="pics/protesti1.jpg" alt="Protesti 1">
+                </div>
+                <div class="slide">
+                    <img src="pics/protesti2.jpg" alt="Protesti 2">
+                </div>
+                <!-- Slide images end -->
+                <!-- Automatic navigation start -->
+                <div class="navigation auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- Automatic navigation end -->
+            </div>
+            <!-- Manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- Manual navigation end -->
+        </div>
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 4) {
+                counter=1;
+            }
+        }, 4000);
+    </script>
+ 
+    <script src="js/index.js"></script>
+
+</body>
+</html>
+    </body>
+</html>

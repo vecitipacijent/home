@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stefan Stanimirovic - personal website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Stefan Stanimirovic</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Freelancer</p>
+            <img src="img/photo3.jpg" alt="My first picture" class="intro__img">
+        </section>
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>System Administration</h3>
+                    <p>Unix/Linux systems administrator with experience configuring,
+                       monitoring, upgrading and maintaining systems hardware, software
+                       and related infrastructure. 
+                    </p>
+                    <p>
+                        Strong analytical skills; able to work with technicians
+                       from various engineering disciplines to troubleshoot complex system-level issues.
+                    </p>
+                    <p>
+                        Created and optimized Unix shell scripts using Bash shells.
+                    </p>
+                </div> <!-- /service -->
+                <div class="service">
+                    <h3>Taking and editing photography</h3>
+                    <p>
+                        Freelance photographer with experience in the wedding, BDSM and fetish photography,
+                        street photography and political, documentary and journalistic photography field.
+                        Has expert lighting skills and Photoshop and Lightroom experience.
+                    </p>
+                    <p>
+                        Working closely with others from the same fields, amateur and professional models,
+                        have introduced professionalism into each team to increase production levels
+                        while keeping a healthy and friendly work environment.
+                    </p>
+                    <p>
+                        An able, enthusiastic, skilled, and reliable photographer,
+                        seeking a position that reflects my experience, skills, and personal attributes
+                        including dedication, meeting goals, creativity, and the ability to follow through.
+                    </p>
+                </div> <!-- /service -->
+                <div class="service">
+                    <h3>Copywriting</h3>
+                    <p>
+                        Specialized in both long-form SEO content
+                        (landing pages, blog posts, etc.) and short-form copywriting
+                        (social media, email marketing).
+                    </p>
+                    <p>
+                        I come to the table with over 3 years of marketing experience 
+                        in both agency and in-house settings.
+                    </p>
+                </div> <!-- /service -->
+                <div class="service">
+                    <h3>Penetration testing</h3>
+                    <p>
+                        Over 2 years of penetration testing experience.
+                    </p>
+                    <p>
+                        Analyzed and secured company network servers from hackers and loss of data
+                    </p>
+                    <p>
+                        Performed security tests on servers, web-based applications, and computer systems
+                    </p>
+                </div> <!-- /service -->
+            </div> <!-- / services -->
+            <a href="#work" class="btn">My work</a>
+        </section>
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">System admin, Photographer, Copywritter, Pentester</p>
+            <div class="about-me__body">
+                <p>
+                    I am passionate about my work. Because I love what I do,
+                    I have a steady source of motivation that drives me to do my best. 
+                </p>
+                <p>
+                    In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. 
+                    For example, I taught myself how to use Photoshop and Lightroom to improve the quality of my photos.
+                </p>
+                <p>
+                    I am also very ambitious and goal driven.
+                    I thrive on challenge and constantly set goals for myself, so I have something to strive toward. 
+                </p>
+                <p>
+                    I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness.
+                    Most of the knowlegde I have about photography, system administration and pentesting was self-taught.
+                </p>
+            </div>
+            <img src="img/photo2.jpg" alt="Me on the wall" class="about-me__img">
+        </section>
+        <!-- My work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">My portfolio</p>
+            <div class="portfolio">
+                <!-- Portfolio Image 01 - Photography -->
+                <a href="photography.html" class="portfolio__item">
+                    <img src="img/camera.jpg" alt="Camera link" class="portfolio__img">
+                    <p>
+                        Photography
+                    </p>
+                <!-- Portfolio Image 02 - My use Linux? -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/blog.jpg" alt="Blog" class="portfolio__img">
+                    <p>
+                        Blog
+                    </p>
+            </div>
+        </section>
+        
+        <div class="quote">
+            <blockquote>
+                <p class="quote__text">
+                “Find a job you enjoy doing, and you will never have to work a day in your life.”
+                </p>
+            <cite class="author">-Mark Twain</cite>
+             </blockquote>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Email adress -->
+            <a href="mailto:stefan.stanimirovic-posao@protonmail.com" class="footer__link">Contact me!</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://instagram.com/st_hikker/">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/vecitipacijent/">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://flickr.com/people/137522220@N08/">
+                        <i class="fa-brands fa-flickr"></i>
+                        </a>
+                    </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/stefanstanimirovic09/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+            </ul>
+            <p>
+                © 2022 by
+                <span class="highlight">Stefan</span>
+                Stanimirovic
+            </p>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
